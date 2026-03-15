@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Singapore's AI-powered property content studio for CEA-licensed agents. Photo enhancement, social media captions, chibi branding and more.">
+  <meta name="keywords" content="Singapore property agent, real estate photo enhancement, property listing photos, CEA agent, social media captions, property content">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thepropedit.com/">
+  <meta property="og:title" content="The PropEdit — Singapore's AI Property Content Studio">
+  <meta property="og:description" content="AI-powered photo enhancement, captions & branding for CEA-licensed property agents in Singapore.">
+  <meta property="og:url" content="https://thepropedit.com/">
+  <meta property="og:type" content="website">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <title>The PropEdit — Singapore's AI-Powered Property Content Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -245,6 +254,64 @@
   }
   .pricing-features li::before { content: '·'; color: var(--gold); font-size: 1rem; line-height: 1; }
   .pricing-card.featured .pricing-features li { color: var(--silver-light); }
+
+  /* CUSTOM PACKAGE */
+  .pricing-custom {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  .pricing-custom-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(135deg, #0D0D0D 0%, #1A1500 50%, #0D0D0D 100%);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2.5rem 2.5rem;
+    position: relative;
+    background-clip: padding-box;
+  }
+  .pricing-custom-inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--silver), var(--gold), var(--silver));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  .pricing-custom-eyebrow {
+    font-size: 0.62rem; letter-spacing: 0.18em; color: var(--gold);
+    text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem;
+  }
+  .pricing-custom-title {
+    font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem;
+    letter-spacing: 0.08em; color: var(--silver-light); line-height: 1;
+  }
+  .pricing-custom-sub {
+    font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;
+    font-style: italic; line-height: 1.5;
+  }
+  .pricing-custom-services {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.5rem;
+    border-left: 1px solid rgba(201,168,76,0.2);
+    border-right: 1px solid rgba(201,168,76,0.2);
+    padding: 0 2rem;
+  }
+  .pricing-custom-item {
+    font-size: 0.78rem; color: var(--text-muted); padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .pricing-custom-cta { text-align: center; }
+
+  @media (max-width: 768px) {
+    .pricing-custom-inner { grid-template-columns: 1fr; text-align: center; }
+    .pricing-custom-services { border: none; padding: 0; grid-template-columns: 1fr; }
+  }
 
   /* HOW IT WORKS */
   #how-it-works { background: var(--bg2); }
@@ -909,7 +976,7 @@
         <li>Replace worn floors, walls &amp; ceilings</li>
       </ul>
       <div class="service-price">
-        <span>Ad-hoc $30/photo</span>
+        <span>Ad-hoc $20/photo</span>
         <span>Virtual staging included</span>
         <span>Bundle deals available</span>
       </div>
@@ -942,14 +1009,13 @@
     <div class="pricing-card">
       <div class="pricing-tier">Starter</div>
       <div class="pricing-sub">Photos Only</div>
-      <div class="pricing-price">$30</div>
+      <div class="pricing-price">$20</div>
       <div class="pricing-period">/photo</div>
       <div class="pricing-divider"></div>
       <ul class="pricing-features">
         <li>Per photo, no contract</li>
-        <li>Clutter removal</li>
-        <li>Virtual staging</li>
-        <li>Lighting fix</li>
+        <li>Clutter removal &amp; virtual staging</li>
+        <li>Lighting &amp; colour fix</li>
         <li>Within 2 business days</li>
       </ul>
     </div>
@@ -961,11 +1027,10 @@
       <div class="pricing-period">/month</div>
       <div class="pricing-divider"></div>
       <ul class="pricing-features">
-        <li>12 enhanced photos</li>
-        <li>4 posts + captions</li>
-        <li>2 chibi images</li>
-        <li>1 AI talking head</li>
-        <li>Facebook + IG only</li>
+        <li>10 enhanced photos</li>
+        <li>1 custom chibi doll image</li>
+        <li>4 creative posts + captions</li>
+        <li>Facebook &amp; Instagram</li>
       </ul>
     </div>
     <div class="pricing-card">
@@ -976,12 +1041,36 @@
       <div class="pricing-divider"></div>
       <ul class="pricing-features">
         <li>30 enhanced photos</li>
+        <li>2 custom chibi doll images</li>
         <li>Full content calendar</li>
-        <li>20 posts + captions</li>
-        <li>6 chibi images</li>
-        <li>2 AI talking head videos</li>
-        <li>FB + IG + YouTube</li>
+        <li>20 creative posts + captions</li>
+        <li>Facebook &amp; Instagram</li>
       </ul>
+    </div>
+  </div>
+
+  <!-- CUSTOM PACKAGE -->
+  <div class="pricing-custom">
+    <div class="pricing-custom-inner">
+      <div class="pricing-custom-left">
+        <div class="pricing-custom-eyebrow">✦ Bespoke Services</div>
+        <div class="pricing-custom-title">CUSTOM PACKAGE</div>
+        <div class="pricing-custom-sub">For agents who want more than the standard packages</div>
+      </div>
+      <div class="pricing-custom-services">
+        <div class="pricing-custom-item">🎥 AI Talking Head Videos</div>
+        <div class="pricing-custom-item">📚 Agent Training Materials</div>
+        <div class="pricing-custom-item">🤖 Your Personal AI Avatar / Clone</div>
+        <div class="pricing-custom-item">🎙️ Voiceover Scripts &amp; Production</div>
+        <div class="pricing-custom-item">▶️ YouTube Content &amp; Strategy</div>
+        <div class="pricing-custom-item">✨ And more — if you can imagine it, we can build it</div>
+      </div>
+      <div class="pricing-custom-cta">
+        <a href="https://wa.me/6565XXXXXXXX" target="_blank" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;">
+          <span>💬</span> WhatsApp Us to Discuss
+        </a>
+        <div style="font-size:0.7rem;color:var(--text-muted);margin-top:0.6rem;">Tailored pricing based on your needs</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1068,9 +1157,10 @@
             <select id="f-package">
               <option value="">Select a package...</option>
               <option>First-Timer Offer — 2 Photos for $10</option>
-              <option>Starter — $30/photo</option>
+              <option>Starter — $20/photo</option>
               <option>Growth — $250/month</option>
               <option>Premium — $800/month</option>
+              <option>Custom Package</option>
             </select>
           </div>
         </div>
@@ -1470,7 +1560,7 @@
 // ---- API CONFIGURATION ----
 // TO ENABLE AI FEATURES: Replace the empty string below with your Anthropic API key
 // Get your key at: https://console.anthropic.com
-const PROPEDIT_API_KEY = 'proxy'; // API calls go through secure Netlify function
+const PROPEDIT_API_KEY = 'proxy'; // API key stored securely in Netlify environment variables
 
 // ---- TAB SWITCHING ----
 function switchTab(id) {
@@ -1599,9 +1689,15 @@ Then output a short 2-sentence analysis, followed by ONLY this JSON on the last 
 
 Tune the numbers to what THIS specific photo needs. For a cluttered dark kitchen, use higher brightness (1.25-1.35) and shadows (30-40). For an already bright room, keep brightness around 1.05-1.15.`;
 
-        const res = await fetch('/.netlify/functions/anthropic-proxy', {
+    if (!PROPEDIT_API_KEY) { throw new Error('NO_KEY'); }
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': PROPEDIT_API_KEY,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-request-from-browser': 'true'
+      },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 500,
@@ -1989,9 +2085,15 @@ Requirements:
 - Do NOT add any other text, headings, or explanations outside the 3 captions`;
 
   try {
-        const res = await fetch('/.netlify/functions/anthropic-proxy', {
+    if (!PROPEDIT_API_KEY) { throw new Error('NO_KEY'); }
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': PROPEDIT_API_KEY,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-request-from-browser': 'true'
+      },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 1000,
